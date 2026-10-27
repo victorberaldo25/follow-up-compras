@@ -1,0 +1,17 @@
+{
+  "name": "AgroTech SLA",
+  "short_name": "SLA Compras",
+  "description": "Painel Gerencial de SLA e Supply Chain - AgroTech",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#0d1117",
+  "theme_color": "#0b8a8b",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cmVjdCB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgcng9IjIwIiBmaWxsPSIjMGI4YThiIi8+PHRleHQgeD0iNTAiIHk9IjU1IiBmb250LXNpemU9IjQ1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkb21pbmFudC1iYXNlbGluZT0ibWlkZGxlIiBmaWxsPSJ3aGl0ZSI+8J+krjwvdGV4dD48L3N2Zz4=",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml"
+    }
+  ]
+}
