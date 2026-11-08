@@ -34,4 +34,5 @@ O **Follow UP Compras & SLA** digitaliza o controle de prazos acordados com forn
    git clone https://github.com/<seu-usuario>/follow-up-compras-sla.git
    cd follow-up-compras-sla
    ```
-2. Abra `index.html` diretamente no navegador ou sirva localmente com `npx serve . -l 5000`.
+2. Sirva localmente com `npx serve . -l 5000`.
+3. Entre com o usuário de demonstração `demo` / senha `demo` (disponível apenas enquanto o Firebase não estiver configurado).

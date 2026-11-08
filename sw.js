@@ -1,4 +1,4 @@
-const CACHE_NAME = 'sla-compras-v50';
+const CACHE_NAME = 'sla-compras-v51';
 const ASSETS = [
   '/',
   '/index.html',
