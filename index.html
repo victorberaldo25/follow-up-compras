@@ -1937,8 +1937,8 @@
         <button class="nb" id="nb-fu" onclick="goPage('p-fu',this);renderFU()"><span id="nav-ic-fu">📦</span> Follow Up - Compras
           <span class="bk" id="b-fu">0</span></button>
         <button class="nb" id="nb-fechamento" style="display:none" onclick="goPage('p-fechamento',this);renderFechamento()"><span id="nav-ic-fechamento">📁</span> Fechamentos</button>
-        <button class="nb" id="nb-hugo" style="display:none" onclick="goPage('p-hugo',this);renderHugo()">✍️ Assinaturas
-          Hugo <span class="bk" id="b-hugo">0</span></button>
+        <button class="nb" id="nb-diretoria" style="display:none" onclick="goPage('p-diretoria',this);renderDiretoria()">✍️ Assinaturas
+          Diretoria <span class="bk" id="b-diretoria">0</span></button>
         <button class="nb" id="nb-admin" style="display:none" onclick="goPage('p-admin',this);renderAdmin()">⚙️
           Admin</button>
         <button class="nb" id="nb-audit" style="display:none" onclick="goPage('p-audit',this);renderAudit()">🔍
@@ -2095,10 +2095,10 @@
                   <option value="Cliente Florestal A - ES">Cliente Florestal A - ES</option>
                   <option value="Cliente Florestal B - SP">Cliente Florestal B - SP</option>
                   <option value="Cliente Florestal B - MG">Cliente Florestal B - MG</option>
-                  <option value="ARAUCO - MS">ARAUCO - MS</option>
-                  <option value="INPASA - MA">INPASA - MA</option>
-                  <option value="OFICINA BAURU">OFICINA BAURU</option>
-                  <option value="ESCRITÓRIO BAURU">ESCRITÓRIO BAURU</option>
+                  <option value="Cliente Florestal C - MS">Cliente Florestal C - MS</option>
+                  <option value="Cliente Bioenergia D - MA">Cliente Bioenergia D - MA</option>
+                  <option value="OFICINA CENTRAL">OFICINA CENTRAL</option>
+                  <option value="ESCRITÓRIO CENTRAL">ESCRITÓRIO CENTRAL</option>
                 </select>
               </div>
               <div class="s-wrap">
@@ -2140,10 +2140,10 @@
                     <option value="Cliente Florestal A - ES">Cliente Florestal A - ES</option>
                     <option value="Cliente Florestal B - SP">Cliente Florestal B - SP</option>
                     <option value="Cliente Florestal B - MG">Cliente Florestal B - MG</option>
-                    <option value="ARAUCO - MS">ARAUCO - MS</option>
-                    <option value="INPASA - MA">INPASA - MA</option>
-                    <option value="OFICINA BAURU">OFICINA BAURU</option>
-                    <option value="ESCRITÓRIO BAURU">ESCRITÓRIO BAURU</option>
+                    <option value="Cliente Florestal C - MS">Cliente Florestal C - MS</option>
+                    <option value="Cliente Bioenergia D - MA">Cliente Bioenergia D - MA</option>
+                    <option value="OFICINA CENTRAL">OFICINA CENTRAL</option>
+                    <option value="ESCRITÓRIO CENTRAL">ESCRITÓRIO CENTRAL</option>
                   </select>
                 </div>
                 <input type="text" id="q-fech-class-busca" oninput="renderFornClassificacao()" placeholder="Buscar fornecedor ou CNPJ..." style="padding:8px 12px; border:1.5px solid var(--border); border-radius:var(--r2); font-size:13px; background:var(--card); color:var(--text); outline:none; height:36px; width:220px;">
@@ -2188,9 +2188,9 @@
               <select id="f-pes" onchange="renderE1()"
                 style="padding:8px 12px; border:1.5px solid var(--border); border-radius:var(--r2); font-size:13px; background:var(--card); color:var(--text); outline:none; height:36px; cursor:pointer">
                 <option value="todos">Todos os Responsáveis</option>
-                <option value="TATIANE">TATIANE</option>
-                <option value="PEDRO">PEDRO</option>
-                <option value="LUIZ">LUIZ</option>
+                <option value="RESPONSAVEL 01">RESPONSÁVEL 01</option>
+                <option value="RESPONSAVEL 02">RESPONSÁVEL 02</option>
+                <option value="RESPONSAVEL 03">RESPONSÁVEL 03</option>
                 <option value="unassigned">Sem Responsável</option>
               </select>
             </div>
@@ -2286,9 +2286,9 @@
           <select id="f2-pes" onchange="renderE2()"
             style="margin-left:8px; padding:6px 10px; border:1.5px solid var(--border); border-radius:var(--r2); font-size:12.5px; background:var(--card); color:var(--text); outline:none; cursor:pointer">
             <option value="todos">Todos os Responsáveis</option>
-            <option value="TATIANE">TATIANE</option>
-            <option value="PEDRO">PEDRO</option>
-            <option value="LUIZ">LUIZ</option>
+            <option value="RESPONSAVEL 01">RESPONSÁVEL 01</option>
+            <option value="RESPONSAVEL 02">RESPONSÁVEL 02</option>
+            <option value="RESPONSAVEL 03">RESPONSÁVEL 03</option>
             <option value="unassigned">Sem Responsável</option>
           </select>
           <select id="f2-tipo" onchange="renderE2()"
@@ -2432,10 +2432,10 @@
                   <option value="Cliente Florestal A - ES">Cliente Florestal A - ES</option>
                   <option value="Cliente Florestal B - SP">Cliente Florestal B - SP</option>
                   <option value="Cliente Florestal B - MG">Cliente Florestal B - MG</option>
-                  <option value="ARAUCO - MS">ARAUCO - MS</option>
-                  <option value="INPASA - MA">INPASA - MA</option>
-                  <option value="OFICINA BAURU">OFICINA BAURU</option>
-                  <option value="ESCRITÓRIO BAURU">ESCRITÓRIO BAURU</option>
+                  <option value="Cliente Florestal C - MS">Cliente Florestal C - MS</option>
+                  <option value="Cliente Bioenergia D - MA">Cliente Bioenergia D - MA</option>
+                  <option value="OFICINA CENTRAL">OFICINA CENTRAL</option>
+                  <option value="ESCRITÓRIO CENTRAL">ESCRITÓRIO CENTRAL</option>
                 </select>
               </div>
               <div class="filter-bar" style="margin:0; padding:0; border:none; background:none;">
@@ -2468,10 +2468,10 @@
                   <option value="Cliente Florestal A - ES">Cliente Florestal A - ES</option>
                   <option value="Cliente Florestal B - SP">Cliente Florestal B - SP</option>
                   <option value="Cliente Florestal B - MG">Cliente Florestal B - MG</option>
-                  <option value="ARAUCO - MS">ARAUCO - MS</option>
-                  <option value="INPASA - MA">INPASA - MA</option>
-                  <option value="OFICINA BAURU">OFICINA BAURU</option>
-                  <option value="ESCRITÓRIO BAURU">ESCRITÓRIO BAURU</option>
+                  <option value="Cliente Florestal C - MS">Cliente Florestal C - MS</option>
+                  <option value="Cliente Bioenergia D - MA">Cliente Bioenergia D - MA</option>
+                  <option value="OFICINA CENTRAL">OFICINA CENTRAL</option>
+                  <option value="ESCRITÓRIO CENTRAL">ESCRITÓRIO CENTRAL</option>
                 </select>
               </div>
               <div class="filter-bar" style="margin:0; padding:0; border:none; background:none;">
@@ -2577,21 +2577,21 @@
       </div>
       <!-- ══════════════════ FIM AUDITORIA ══════════════════ -->
 
-      <!-- ══════════════════ ASSINATURAS HUGO ══════════════════ -->
-      <div id="p-hugo" class="page">
+      <!-- ══════════════════ ASSINATURAS DIRETORIA ══════════════════ -->
+      <div id="p-diretoria" class="page">
         <div class="toolbar" style="margin-bottom:20px;">
           <div class="tb-title" style="display:flex;align-items:center;gap:12px">
-            <div>✍️ Assinadas pelo Hugo<br><small style="color:var(--muted);font-size:12px;font-weight:400">Controle de
+            <div>✍️ Assinadas pela Diretoria<br><small style="color:var(--muted);font-size:12px;font-weight:400">Controle de
                 notas com preenchimentos adicionais e relatórios à parte.</small></div>
           </div>
           <div style="display:flex;gap:10px;align-items:center;">
             <div class="s-wrap" style="display:flex;align-items:center;gap:5px;background:var(--card);border:1.5px solid var(--border);border-radius:var(--r2);padding:0 8px;height:36px" title="Período de Data do Pedido">
               <span style="font-size:11px;color:var(--muted);font-weight:600">DE</span>
-              <input type="date" id="f-d1-hugo" onchange="renderHugo()" style="border:none;background:transparent;outline:none;font-size:12px;color:var(--text);cursor:pointer;width:105px">
+              <input type="date" id="f-d1-diretoria" onchange="renderDiretoria()" style="border:none;background:transparent;outline:none;font-size:12px;color:var(--text);cursor:pointer;width:105px">
               <span style="font-size:11px;color:var(--muted);font-weight:600">ATÉ</span>
-              <input type="date" id="f-d2-hugo" onchange="renderHugo()" style="border:none;background:transparent;outline:none;font-size:12px;color:var(--text);cursor:pointer;width:105px">
+              <input type="date" id="f-d2-diretoria" onchange="renderDiretoria()" style="border:none;background:transparent;outline:none;font-size:12px;color:var(--text);cursor:pointer;width:105px">
             </div>
-            <button class="btn btn-outline" style="border-color:var(--teal);color:var(--teal); height:36px;" onclick="exportarHugo()">📥 Extrair Relatório Excel</button>
+            <button class="btn btn-outline" style="border-color:var(--teal);color:var(--teal); height:36px;" onclick="exportarDiretoria()">📥 Extrair Relatório Excel</button>
           </div>
         </div>
         <div class="tbl-wrap">
@@ -2611,7 +2611,7 @@
                 <th>Ações</th>
               </tr>
             </thead>
-            <tbody id="tb-hugo"></tbody>
+            <tbody id="tb-diretoria"></tbody>
           </table>
         </div>
       </div>
@@ -2761,9 +2761,9 @@
             <div class="fg">
               <label>Responsável</label>
               <select id="m1-pes">
-                <option value="TATIANE">TATIANE</option>
-                <option value="PEDRO">PEDRO</option>
-                <option value="LUIZ">LUIZ</option>
+                <option value="RESPONSAVEL 01">RESPONSÁVEL 01</option>
+                <option value="RESPONSAVEL 02">RESPONSÁVEL 02</option>
+                <option value="RESPONSAVEL 03">RESPONSÁVEL 03</option>
                 <option value="" disabled>-- Não Atribuído --</option>
               </select>
             </div>
@@ -2821,8 +2821,8 @@
           <div class="fg" style="grid-column:1/-1">
             <label
               style="display:flex;align-items:center;gap:8px;margin-top:12px;font-size:13px;font-weight:600;color:var(--text);cursor:pointer;"><input
-                type="checkbox" id="mnf-hugo" style="width:16px;height:16px;accent-color:var(--teal)"> Assinado pelo
-              Hugo</label>
+                type="checkbox" id="mnf-diretoria" style="width:16px;height:16px;accent-color:var(--teal)"> Assinado pela
+              Diretoria</label>
           </div>
         </div>
       </div>
@@ -2884,8 +2884,8 @@
           <div class="fg sp2">
             <label
               style="display:flex;align-items:center;gap:8px;margin-top:12px;font-size:13px;font-weight:600;color:var(--text);cursor:pointer;"><input
-                type="checkbox" id="mm-hugo" style="width:16px;height:16px;accent-color:var(--teal)"> Assinado pelo
-              Hugo</label>
+                type="checkbox" id="mm-diretoria" style="width:16px;height:16px;accent-color:var(--teal)"> Assinado pela
+              Diretoria</label>
           </div>
         </div>
       </div>
@@ -2897,15 +2897,15 @@
     </div>
   </div>
 
-  <!-- ══════ MODAL: HUGO INFO ══════ -->
-  <div class="ov" id="ov-hugo-info" onclick="xOvClick(event,'ov-hugo-info')">
+  <!-- ══════ MODAL: DIRETORIA INFO ══════ -->
+  <div class="ov" id="ov-diretoria-info" onclick="xOvClick(event,'ov-diretoria-info')">
     <div class="modal" style="max-width:500px">
       <div class="mhd">
         <div>
           <h3 id="mhi-title">Preencher Informações Adicionais</h3>
-          <p style="font-size:11.5px;color:var(--muted);margin:3px 0 0">Complete os dados para o relatório do Hugo.</p>
+          <p style="font-size:11.5px;color:var(--muted);margin:3px 0 0">Complete os dados para o relatório da Diretoria.</p>
         </div>
-        <button class="x-btn" onclick="closeOv('ov-hugo-info')">✕</button>
+        <button class="x-btn" onclick="closeOv('ov-diretoria-info')">✕</button>
       </div>
       <div class="mbd">
         <div class="fg2">
@@ -2923,8 +2923,8 @@
         </div>
       </div>
       <div class="mft">
-        <button class="btn btn-ghost" onclick="closeOv('ov-hugo-info')">Cancelar</button>
-        <button class="btn btn-primary" onclick="saveHugoInfo()">💾 Salvar Dados</button>
+        <button class="btn btn-ghost" onclick="closeOv('ov-diretoria-info')">Cancelar</button>
+        <button class="btn btn-primary" onclick="saveDiretoriaInfo()">💾 Salvar Dados</button>
       </div>
     </div>
   </div>
@@ -3058,9 +3058,9 @@
               style="display:flex;align-items:center;gap:10px;padding:10px 14px;border:1.5px solid var(--teal);border-radius:var(--r2);cursor:pointer;background:var(--teal-a)">
               <input type="checkbox" id="mu-p7" style="width:16px;height:16px;accent-color:var(--teal)">
               <div>
-                <div style="font-size:12.5px;font-weight:600;color:var(--teal)">✍️ Assinaturas Hugo
+                <div style="font-size:12.5px;font-weight:600;color:var(--teal)">✍️ Assinaturas Diretoria
                 </div>
-                <div style="font-size:10.5px;color:var(--muted)">Acesso restrito à página de controle de assinaturas e exportação do Hugo</div>
+                <div style="font-size:10.5px;color:var(--muted)">Acesso restrito à página de controle de assinaturas e exportação da Diretoria</div>
               </div>
             </label>
             <label
@@ -3295,11 +3295,11 @@
     // ═══════════════════════════════════════════════════════════════
     const firebaseConfig = {
       apiKey: "SUA_FIREBASE_API_KEY",
-      authDomain: "follow-up-sla.firebaseapp.com",
-      projectId: "follow-up-sla",
-      storageBucket: "follow-up-sla.firebasestorage.app",
-      messagingSenderId: "531134626326",
-      appId: "1:531134626326:web:2c1d69bb7d039de6e2d337"
+      authDomain: "SEU_PROJETO.firebaseapp.com",
+      projectId: "SEU_PROJETO",
+      storageBucket: "SEU_PROJETO.firebasestorage.app",
+      messagingSenderId: "SEU_SENDER_ID",
+      appId: "SEU_APP_ID"
     };
 
     try { firebase.initializeApp(firebaseConfig); } catch(e) { console.warn('Executando em Modo Portfólio Local (Mock Data).'); }
@@ -3313,7 +3313,7 @@
     let BASE_FORN_CLASS = {}, FECHAMENTOS_STATUS = {};
     let editFechForn = '', editFechMes = '';
     let CUR = null;
-    let SYS_CONFIG = { logo: '', e1: '🛒', e2: '📄', sla: '📊', operacoes: ['Cliente Florestal A - ES','Cliente Florestal B - SP','Cliente Florestal B - MG','ARAUCO - MS','INPASA - MA','OFICINA BAURU','ESCRITÓRIO BAURU'], tipos_compra: ['COMPRA', 'REGULARIZAÇÃO', 'EMERGENCIAL', 'FECHAMENTO', 'IMPOSTOS/TAXAS'] };
+    let SYS_CONFIG = { logo: '', e1: '🛒', e2: '📄', sla: '📊', operacoes: ['Cliente Florestal A - ES','Cliente Florestal B - SP','Cliente Florestal B - MG','Cliente Florestal C - MS','Cliente Bioenergia D - MA','OFICINA CENTRAL','ESCRITÓRIO CENTRAL'], tipos_compra: ['COMPRA', 'REGULARIZAÇÃO', 'EMERGENCIAL', 'FECHAMENTO', 'IMPOSTOS/TAXAS'] };
     let FILTRO = 'todos';
     let editId1 = null, editNfId = null, editNfe1Id = null, editUserId = null;
     let pcTimer = null;
@@ -3416,11 +3416,11 @@
     }
 
     const UNIFICA_COMPRADORES = {
-      "ANDRE": "ANDRE LUIZ",
-      "DANIEL": "DANIEL GOMES",
-      "JHONATAN": "JHONATAN LOPES",
-      "JULIANA": "JULIANA FLORENTINO",
-      "PEDRO": "PEDRO BELORIO"
+      "COMP01": "COMPRADOR 01",
+      "COMP02": "COMPRADOR 02",
+      "COMP03": "COMPRADOR 03",
+      "COMP04": "COMPRADOR 04",
+      "COMP05": "COMPRADOR 05"
     };
 
     const normalizarNomeComprador = (nome) => {
@@ -4027,7 +4027,7 @@
             let solicitante = String(findKeyExactOrPartial(row, ['solicitante', 'nome solicitante', 'requisitante', 'criado por', 'usuario']) || '').trim();
             let filial = String(findKeyExactOrPartial(row, ['filial', 'empresa', 'operação', 'operacao']) || '').trim().toUpperCase();
 
-            // Formatar "victor.beraldo" -> "Victor Beraldo" se contiver ponto
+            // Formatar "nome.sobrenome" -> "Nome Sobrenome" se contiver ponto
             if (solicitante.includes('.')) {
               solicitante = solicitante.split('.').map(p => p.charAt(0).toUpperCase() + p.slice(1).toLowerCase()).join(' ');
             } else if (solicitante) {
@@ -4088,8 +4088,10 @@
         const err = document.getElementById('login-err');
         err.style.display = 'none';
 
+        // Login de demonstração: só existe quando o Firebase NÃO está configurado (modo portfólio local).
+        const MODO_PORTFOLIO = String(firebaseConfig.apiKey).startsWith('SUA_');
         let isHardcodedAdmin = false;
-        if ((login === "victor beraldo" || loginOriginal === "Victor Beraldo") && senha === "1528") {
+        if (MODO_PORTFOLIO && login === 'demo' && senha === 'demo') {
           isHardcodedAdmin = true;
         }
 
@@ -4098,7 +4100,7 @@
 
         if (isHardcodedAdmin) {
           u = USERS.find(x => x.login === login) || {
-            id: 'admin-master', nome: 'Victor Beraldo', login: 'victor beraldo', role: 'admin', ativo: true
+            id: 'demo-admin', nome: 'Usuário Demo', login: 'demo', role: 'admin', ativo: true
           };
         } else {
           u = USERS.find(x => x.login === login && x.ativo !== false);
@@ -4132,7 +4134,7 @@
           document.getElementById('btn-sync-totvs').style.display = '';
           document.getElementById('btn-upd-tela').style.display = '';
 
-          ['nb-e1', 'nb-e2', 'nb-sla', 'nb-fu', 'nb-comp', 'nb-hugo', 'nb-fechamento', 'h-btn-e1', 'h-btn-e2', 'h-btn-sla', 'h-btn-fu', 'h-btn-comp', 'h-btn-fechamento'].forEach(id => gid(id).style.display = '');
+          ['nb-e1', 'nb-e2', 'nb-sla', 'nb-fu', 'nb-comp', 'nb-diretoria', 'nb-fechamento', 'h-btn-e1', 'h-btn-e2', 'h-btn-sla', 'h-btn-fu', 'h-btn-comp', 'h-btn-fechamento'].forEach(id => gid(id).style.display = '');
 
           // Auditoria visível apenas para admin/supervisor
           gid('nb-audit').style.display = '';
@@ -4181,9 +4183,9 @@
           const secMU = gid('manual-fiscal-section');
           if (secMU) secMU.style.display = p6 ? '' : 'none';
 
-          // Assinaturas Hugo
-          const p7 = u.perm_hugo === true;
-          gid('nb-hugo').style.display = p7 ? '' : 'none';
+          // Assinaturas Diretoria
+          const p7 = u.perm_diretoria === true;
+          gid('nb-diretoria').style.display = p7 ? '' : 'none';
 
           if (!p1 && !p2 && !p3 && !p4 && !p5 && !p8) {
             goPage('p-denied', null);
@@ -4269,7 +4271,7 @@
       if (configLoad && !Array.isArray(configLoad)) SYS_CONFIG = { ...SYS_CONFIG, ...configLoad };
       // Garantir que operacoes seja sempre um array com valores padrão se vazio
       if (!Array.isArray(SYS_CONFIG.operacoes) || SYS_CONFIG.operacoes.length === 0) {
-        SYS_CONFIG.operacoes = ['Cliente Florestal A - ES','Cliente Florestal B - SP','Cliente Florestal B - MG','ARAUCO - MS','INPASA - MA','OFICINA BAURU','ESCRITÓRIO BAURU'];
+        SYS_CONFIG.operacoes = ['Cliente Florestal A - ES','Cliente Florestal B - SP','Cliente Florestal B - MG','Cliente Florestal C - MS','Cliente Bioenergia D - MA','OFICINA CENTRAL','ESCRITÓRIO CENTRAL'];
       }
       // Garantir que tipos_compra seja sempre um array com valores padrão se vazio
       if (!Array.isArray(SYS_CONFIG.tipos_compra) || SYS_CONFIG.tipos_compra.length === 0) {
@@ -4630,7 +4632,7 @@
         cnpj: gv('m1-cj').trim(), data_envio_flavio: d_ev,
         data_aprovacao_flavio: d_ap, status: st,
         comprador: pad3(gv('m1-comp')),
-        assinado_hugo: gid('mnf-hugo') ? gid('mnf-hugo').checked : false,
+        assinado_diretoria: gid('mnf-diretoria') ? gid('mnf-diretoria').checked : false,
         criado_por: CUR?.login, created_at: editId1 ? (D1.find(x => x.id === editId1)?.created_at || now()) : now(),
       };
       if (!gv('m1-pc')) { toast('Informe o Nº do PC.', 't-err'); return; }
@@ -4907,7 +4909,7 @@
 
         return `<div class="pc-card ${estado}" onclick="openMNF('${r.id}')">
       <span class="card-status">${statusLabel}</span>
-      <div class="card-num">PC ${pad6(r.numero_pc) || '—'} ${r.tipo ? `<span style="font-size:9px;background:${tipoBg};padding:2px 6px;border-radius:4px;margin-left:6px;font-weight:600;vertical-align:middle;color:${tipoColor}">${r.tipo}</span>` : ''} ${nf?.assinado_hugo ? `<span style="font-size:10px;background:#e2e8f0;color:#475569;padding:2px 6px;border-radius:4px;margin-left:4px;font-weight:600" title="Assinado pelo Hugo">✍️ Hugo</span>` : ''}</div>
+      <div class="card-num">PC ${pad6(r.numero_pc) || '—'} ${r.tipo ? `<span style="font-size:9px;background:${tipoBg};padding:2px 6px;border-radius:4px;margin-left:6px;font-weight:600;vertical-align:middle;color:${tipoColor}">${r.tipo}</span>` : ''} ${nf?.assinado_diretoria ? `<span style="font-size:10px;background:#e2e8f0;color:#475569;padding:2px 6px;border-radius:4px;margin-left:4px;font-weight:600" title="Assinado pela Diretoria">✍️ Diretoria</span>` : ''}</div>
       <div class="card-forn">${trunc(r.fornecedor_nome, 32)}</div>
       <div class="card-cnpj">${r.cnpj || '—'}</div>
       <div class="card-row"><span class="cr-lbl">Comprador</span><span class="cr-val" style="font-size:11px">${trunc(nomeComp(r.comprador), 24)}</span></div>
@@ -4942,7 +4944,7 @@
     <div class="pc-info-item"><div class="pii-lbl">Valor</div><div class="pii-val">${brl(e1.valor_pedido)}</div></div>
     <div class="pc-info-item"><div class="pii-lbl">Aprovado em</div><div class="pii-val">${fmt(e1.data_aprovacao_flavio)}</div></div>`;
       ['mnf-nf', 'mnf-dt', 'mnf-pn', 'mnf-fs'].forEach(id => { gid(id).value = ''; gid(id).disabled = false; });
-      gid('mnf-hugo').checked = false; gid('mnf-hugo').disabled = false;
+      gid('mnf-diretoria').checked = false; gid('mnf-diretoria').disabled = false;
       // Bloquear datas retroativas em Pré-Nota e Envio ao Fiscal (considerando timezone local)
       const tzOffset = (new Date()).getTimezoneOffset() * 60000;
       const _hojeMin = new Date(Date.now() - tzOffset).toISOString().split('T')[0];
@@ -4958,7 +4960,7 @@
       if (nf) {
         sv('mnf-nf', nf.numero_nf); sv('mnf-dt', nf.data_emissao_nf);
         sv('mnf-pn', nf.data_pre_nota); sv('mnf-fs', nf.data_envio_fiscal);
-        gid('mnf-hugo').checked = nf.assinado_hugo || false;
+        gid('mnf-diretoria').checked = nf.assinado_diretoria || false;
       }
 
       if (!canEdit && nf) {
@@ -4966,7 +4968,7 @@
         gid('mnf-dt').disabled = !!nf.data_emissao_nf;
         gid('mnf-pn').disabled = !!nf.data_pre_nota;
         gid('mnf-fs').disabled = !!nf.data_envio_fiscal;
-        gid('mnf-hugo').disabled = !!nf.assinado_hugo;
+        gid('mnf-diretoria').disabled = !!nf.assinado_diretoria;
         if (estado === 'completo') {
           document.querySelector('#ov-nf .mft .btn-primary').style.display = 'none';
         }
@@ -4982,7 +4984,7 @@
         id: editNfId || uid(), etapa1_id: editNfe1Id,
         numero_nf: gv('mnf-nf').trim(), data_emissao_nf: gv('mnf-dt') || null,
         data_pre_nota: gv('mnf-pn') || null, data_envio_fiscal: gv('mnf-fs') || null,
-        assinado_hugo: gid('mnf-hugo').checked,
+        assinado_diretoria: gid('mnf-diretoria').checked,
         criado_por: CUR?.login,
         created_at: editNfId ? D2.find(x => x.id === editNfId)?.created_at : now(),
       };
@@ -5017,16 +5019,16 @@
     }
 
     // ═══════════════════════════════════════════════════════════════
-    //  ASSINATURAS HUGO
+    //  ASSINATURAS DIRETORIA
     // ═══════════════════════════════════════════════════════════════
-    function renderHugo() {
-      const tb = document.getElementById('tb-hugo');
-      const itemsD2 = D2.filter(x => x.assinado_hugo === true);
-      const itemsMan = D_MANUAL.filter(x => x.assinado_hugo === true).map(m => ({ ...m, is_manual: true }));
+    function renderDiretoria() {
+      const tb = document.getElementById('tb-diretoria');
+      const itemsD2 = D2.filter(x => x.assinado_diretoria === true);
+      const itemsMan = D_MANUAL.filter(x => x.assinado_diretoria === true).map(m => ({ ...m, is_manual: true }));
       let items = [...itemsD2, ...itemsMan];
 
-      const d1 = gv('f-d1-hugo');
-      const d2 = gv('f-d2-hugo');
+      const d1 = gv('f-d1-diretoria');
+      const d2 = gv('f-d2-diretoria');
       if (d1 || d2) {
         items = items.filter(r => {
           let dt = r.data_doc || '';
@@ -5038,9 +5040,9 @@
         });
       }
 
-      gid('b-hugo').textContent = items.length;
+      gid('b-diretoria').textContent = items.length;
       if (!items.length) {
-        tb.innerHTML = '<tr><td colspan="9"><div class="empty"><div class="ei">✍️</div><p>Nenhuma nota marcada como assinada pelo Hugo.</p></div></td></tr>';
+        tb.innerHTML = '<tr><td colspan="9"><div class="empty"><div class="ei">✍️</div><p>Nenhuma nota marcada como assinada pela Diretoria.</p></div></td></tr>';
         return;
       }
       let html = '';
@@ -5061,9 +5063,9 @@
           comprador = r.fornecedor || '—';
         }
         
-        let podeEditar = CUR?.role === 'admin' || !r.hugo_data_assinatura;
+        let podeEditar = CUR?.role === 'admin' || !r.diretoria_data_assinatura;
         let acaoHTML = podeEditar 
-            ? `<button class="btn btn-ghost btn-sm" onclick="openHugoInfo('${r.id}')">✏️ Preencher</button>` 
+            ? `<button class="btn btn-ghost btn-sm" onclick="openDiretoriaInfo('${r.id}')">✏️ Preencher</button>` 
             : `<span style="font-size:11px;color:var(--muted)">🔒 Salvo</span>`;
 
         html += `<tr>
@@ -5072,61 +5074,61 @@
           <td>${dataEmissaoNF}</td>
           <td>${valor}</td>
           <td>${comprador}</td>
-          <td>${fmt(r.hugo_vencimento)}</td>
-          <td>${r.hugo_solicitante || '—'}</td>
-          <td>${r.hugo_depto || '—'}</td>
-          <td style="max-width:250px;white-space:normal;font-size:11.5px">${r.hugo_motivo || '—'}</td>
-          <td class="nw">${fmt(r.hugo_data_assinatura) || '—'}</td>
+          <td>${fmt(r.diretoria_vencimento)}</td>
+          <td>${r.diretoria_solicitante || '—'}</td>
+          <td>${r.diretoria_depto || '—'}</td>
+          <td style="max-width:250px;white-space:normal;font-size:11.5px">${r.diretoria_motivo || '—'}</td>
+          <td class="nw">${fmt(r.diretoria_data_assinatura) || '—'}</td>
           <td>${acaoHTML}</td>
         </tr>`;
       });
       tb.innerHTML = html;
     }
 
-    let editHugoId = null;
-    function openHugoInfo(id) {
-      editHugoId = id;
+    let editDiretoriaId = null;
+    function openDiretoriaInfo(id) {
+      editDiretoriaId = id;
       const r = D2.find(x => x.id === id) || D_MANUAL.find(x => x.id === id);
       if (!r) return;
-      gid('mhi-venc').value = r.hugo_vencimento || '';
-      gid('mhi-sol').value = r.hugo_solicitante || '';
-      gid('mhi-dep').value = r.hugo_depto || '';
-      gid('mhi-mot').value = r.hugo_motivo || '';
-      openOv('ov-hugo-info');
+      gid('mhi-venc').value = r.diretoria_vencimento || '';
+      gid('mhi-sol').value = r.diretoria_solicitante || '';
+      gid('mhi-dep').value = r.diretoria_depto || '';
+      gid('mhi-mot').value = r.diretoria_motivo || '';
+      openOv('ov-diretoria-info');
     }
 
-    async function saveHugoInfo() {
-      if (!editHugoId) return;
-      const isD2 = D2.find(x => x.id === editHugoId);
-      const rAtu = isD2 || D_MANUAL.find(x => x.id === editHugoId);
+    async function saveDiretoriaInfo() {
+      if (!editDiretoriaId) return;
+      const isD2 = D2.find(x => x.id === editDiretoriaId);
+      const rAtu = isD2 || D_MANUAL.find(x => x.id === editDiretoriaId);
       const dataHoje = new Date().toISOString().split('T')[0];
       const payloadExt = {
-        hugo_vencimento: gid('mhi-venc').value || null,
-        hugo_solicitante: gid('mhi-sol').value.trim() || null,
-        hugo_depto: gid('mhi-dep').value.trim() || null,
-        hugo_motivo: gid('mhi-mot').value.trim() || null,
-        hugo_data_assinatura: rAtu?.hugo_data_assinatura || dataHoje
+        diretoria_vencimento: gid('mhi-venc').value || null,
+        diretoria_solicitante: gid('mhi-sol').value.trim() || null,
+        diretoria_depto: gid('mhi-dep').value.trim() || null,
+        diretoria_motivo: gid('mhi-mot').value.trim() || null,
+        diretoria_data_assinatura: rAtu?.diretoria_data_assinatura || dataHoje
       };
 
       if (isD2) {
-        D2 = D2.map(x => x.id === editHugoId ? { ...x, ...payloadExt } : x);
+        D2 = D2.map(x => x.id === editDiretoriaId ? { ...x, ...payloadExt } : x);
         await salvarJSON('etapa2', D2);
       } else {
-        D_MANUAL = D_MANUAL.map(x => x.id === editHugoId ? { ...x, ...payloadExt } : x);
+        D_MANUAL = D_MANUAL.map(x => x.id === editDiretoriaId ? { ...x, ...payloadExt } : x);
         await salvarJSON('manual_fiscal', D_MANUAL);
       }
       toast('Dados adicionais salvos!', 't-ok');
-      closeOv('ov-hugo-info');
-      renderHugo();
+      closeOv('ov-diretoria-info');
+      renderDiretoria();
     }
 
-    function exportarHugo() {
-      const itemsD2 = D2.filter(x => x.assinado_hugo === true);
-      const itemsMan = D_MANUAL.filter(x => x.assinado_hugo === true).map(m => ({ ...m, is_manual: true }));
+    function exportarDiretoria() {
+      const itemsD2 = D2.filter(x => x.assinado_diretoria === true);
+      const itemsMan = D_MANUAL.filter(x => x.assinado_diretoria === true).map(m => ({ ...m, is_manual: true }));
       let items = [...itemsD2, ...itemsMan];
       
-      const d1 = gv('f-d1-hugo');
-      const d2 = gv('f-d2-hugo');
+      const d1 = gv('f-d1-diretoria');
+      const d2 = gv('f-d2-diretoria');
       if (d1 || d2) {
         items = items.filter(r => {
           let dt = r.data_doc || '';
@@ -5161,18 +5163,18 @@
           "Emissão NF": dataEmissaoNF,
           "Valor": valor,
           "Comprador": comprador,
-          "Vencimento": fmt(r.hugo_vencimento),
-          "Solicitante": r.hugo_solicitante || '',
-          "Departamento": r.hugo_depto || '',
-          "Motivo": r.hugo_motivo || '',
-          "Assinatura Hugo": fmt(r.hugo_data_assinatura) || ''
+          "Vencimento": fmt(r.diretoria_vencimento),
+          "Solicitante": r.diretoria_solicitante || '',
+          "Departamento": r.diretoria_depto || '',
+          "Motivo": r.diretoria_motivo || '',
+          "Assinatura Diretoria": fmt(r.diretoria_data_assinatura) || ''
         };
       });
 
       const ws = XLSX.utils.json_to_sheet(linhas);
       const wb = XLSX.utils.book_new();
-      XLSX.utils.book_append_sheet(wb, ws, "Assinadas Hugo");
-      XLSX.writeFile(wb, `Relatorio_Hugo_${new Date().toISOString().split('T')[0]}.xlsx`);
+      XLSX.utils.book_append_sheet(wb, ws, "Assinadas Diretoria");
+      XLSX.writeFile(wb, `Relatorio_Diretoria_${new Date().toISOString().split('T')[0]}.xlsx`);
     }
 
     function renderSLA() {
@@ -6351,7 +6353,7 @@
       gid('mu-perms-esp').style.display = '';
       gid('mu-p1').checked = true; gid('mu-p2').checked = true; gid('mu-p3').checked = true; gid('mu-p4').checked = true; gid('mu-p5').checked = true;
       gid('mu-p6').checked = false; // perm_manual desativado por padrão
-      gid('mu-p7').checked = false; // perm_hugo desativado por padrão
+      gid('mu-p7').checked = false; // perm_diretoria desativado por padrão
       gid('mu-p8').checked = false; // perm_fechamentos desativado por padrão
       
       // Limpar e ocultar restrições de operação
@@ -6370,7 +6372,7 @@
           gid('mu-p4').checked = u.perm_fu !== false;
           gid('mu-p5').checked = u.perm_comp !== false;
           gid('mu-p6').checked = u.perm_manual === true;
-          gid('mu-p7').checked = u.perm_hugo === true;
+          gid('mu-p7').checked = u.perm_diretoria === true;
           gid('mu-p8').checked = u.perm_fechamentos === true;
 
           // Mostrar restrições de operação se for materiais
@@ -6405,7 +6407,7 @@
         const u = USERS.find(x => x.id === editUserId);
         if (u) {
           u.nome = nome; u.login = login; u.role = role;
-          u.perm_e1 = gid('mu-p1').checked; u.perm_e2 = gid('mu-p2').checked; u.perm_sla = gid('mu-p3').checked; u.perm_fu = gid('mu-p4').checked; u.perm_comp = gid('mu-p5').checked; u.perm_manual = gid('mu-p6').checked; u.perm_hugo = gid('mu-p7').checked; u.perm_fechamentos = gid('mu-p8').checked;
+          u.perm_e1 = gid('mu-p1').checked; u.perm_e2 = gid('mu-p2').checked; u.perm_sla = gid('mu-p3').checked; u.perm_fu = gid('mu-p4').checked; u.perm_comp = gid('mu-p5').checked; u.perm_manual = gid('mu-p6').checked; u.perm_diretoria = gid('mu-p7').checked; u.perm_fechamentos = gid('mu-p8').checked;
           u.operacoes = role === 'materiais' ? operacoes : [];
           if (senha) u.senha_hash = await hash(senha);
         }
@@ -6414,7 +6416,7 @@
         if (USERS.find(x => x.login === login)) { toast('Login já existe.', 't-err'); return; }
         const novo = {
           id: uid(), nome, login, senha_hash: await hash(senha), role, ativo: true, criado_em: now(), ultimo_acesso: null,
-          perm_e1: gid('mu-p1').checked, perm_e2: gid('mu-p2').checked, perm_sla: gid('mu-p3').checked, perm_fu: gid('mu-p4').checked, perm_comp: gid('mu-p5').checked, perm_manual: gid('mu-p6').checked, perm_hugo: gid('mu-p7').checked, perm_fechamentos: gid('mu-p8').checked,
+          perm_e1: gid('mu-p1').checked, perm_e2: gid('mu-p2').checked, perm_sla: gid('mu-p3').checked, perm_fu: gid('mu-p4').checked, perm_comp: gid('mu-p5').checked, perm_manual: gid('mu-p6').checked, perm_diretoria: gid('mu-p7').checked, perm_fechamentos: gid('mu-p8').checked,
           operacoes: role === 'materiais' ? operacoes : []
         };
         USERS.push(novo);
@@ -6506,7 +6508,7 @@
         id: editManualId || uid(),
         tipo, numero_doc: num, fornecedor: forn, operacao: oper,
         data_doc: dtDoc, data_envio_fiscal: dtFs, valor, observacao: obs,
-        assinado_hugo: gid('mnf-hugo').checked,
+        assinado_diretoria: gid('mnf-diretoria').checked,
         criado_por: CUR?.login, criado_em: editManualId ? D_MANUAL.find(x => x.id === editManualId)?.criado_em : now(),
         is_manual: true
       };
@@ -6546,7 +6548,7 @@
         <th>Data Doc</th><th>Envio Fiscal</th><th>Valor</th><th>Obs</th><th>Ações</th>
       </tr></thead><tbody>` + D_MANUAL.map(m => `
         <tr>
-          <td><span class="badge" style="background:var(--amber-a);color:var(--amber);font-size:9px">${m.tipo}</span>${m.assinado_hugo ? `<span style="font-size:10px;background:#e2e8f0;color:#475569;padding:2px 6px;border-radius:4px;margin-left:4px;font-weight:600" title="Assinado pelo Hugo">✍️ Hugo</span>` : ''}</td>
+          <td><span class="badge" style="background:var(--amber-a);color:var(--amber);font-size:9px">${m.tipo}</span>${m.assinado_diretoria ? `<span style="font-size:10px;background:#e2e8f0;color:#475569;padding:2px 6px;border-radius:4px;margin-left:4px;font-weight:600" title="Assinado pela Diretoria">✍️ Diretoria</span>` : ''}</td>
           <td class="mono" style="font-weight:700">${m.numero_doc || '—'}</td>
           <td>${trunc(m.fornecedor, 24) || '—'}</td>
           <td><span class="badge b-pd" style="font-size:9px">${m.operacao || '—'}</span></td>
@@ -6574,7 +6576,7 @@
       const todosPendentes = Object.entries(BASE_PED)
         .filter(([key, v]) => {
           if (!v.data_emissao || v.data_emissao < DATA_CORTE_AUDIT) return false;
-          if ((v.comprador || '').toUpperCase().includes('DANIEL GOMES')) return false;
+          if ((v.comprador || '').toUpperCase().includes('COMPRADOR 02')) return false;
           const pc = pad6(key.split('_')[0]);
           return !slaSet.has(pc);
         })
@@ -6691,7 +6693,7 @@
       const slaSet = new Set(D1.map(r => pad6(r.numero_pc)));
 
       const dados = Object.entries(BASE_PED)
-        .filter(([key, v]) => v.data_emissao && v.data_emissao >= DATA_CORTE_AUDIT && !(v.comprador || '').toUpperCase().includes('DANIEL GOMES') && !slaSet.has(pad6(key.split('_')[0])))
+        .filter(([key, v]) => v.data_emissao && v.data_emissao >= DATA_CORTE_AUDIT && !(v.comprador || '').toUpperCase().includes('COMPRADOR 02') && !slaSet.has(pad6(key.split('_')[0])))
         .map(([key, v]) => {
           const pc = pad6(key.split('_')[0]);
           const dias = v.data_emissao ? Math.round((new Date(hojeISO) - new Date(v.data_emissao)) / 86400000) : null;
